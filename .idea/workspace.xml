@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b6e3d2b-4074-46c2-9ae5-eeaadb0abff8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar/navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/works-page/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/works-page/works-page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/works-page/works-page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/button/button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/RestProvider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/RestProvider.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/WorkService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/WorkService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/type.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/type.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/navbar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +17,9 @@
       <list>
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
         <option value="SCSS File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -76,7 +65,8 @@
       <updated>1609430337185</updated>
       <workItem from="1609430343842" duration="1640000" />
       <workItem from="1609435300206" duration="12715000" />
-      <workItem from="1609449350335" duration="2561000" />
+      <workItem from="1609449350335" duration="2769000" />
+      <workItem from="1609453173629" duration="1339000" />
     </task>
     <servers />
   </component>

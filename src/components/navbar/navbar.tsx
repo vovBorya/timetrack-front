@@ -1,5 +1,6 @@
 import React from 'react';
 import './navbar.scss';
+import {Button} from "../button/button";
 
 type Props = {
 
@@ -9,10 +10,6 @@ const Navbar: React.FC<Props> = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="#">TimeTracker</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-              aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
 
       <div className="collapse navbar-collapse" id="navbarColor01">
         <ul className="navbar-nav mr-auto">
@@ -26,7 +23,11 @@ const Navbar: React.FC<Props> = () => {
           </li>
         </ul>
 
-        <button className='btn btn-success'>Add  work</button>
+        <Button
+          type='success'
+          title='Add work'
+          onClick={() => console.log('Click')}
+        />
       </div>
     </nav>
   );
