@@ -10,6 +10,9 @@ export class RestProvider {
     return axios({method, url: `api/${url}`, data});
   };
 
-  getAll = async (resourceUrl: string) => await this.getResource('GET', resourceUrl);
+  getList = async (resourceUrl: string) => await this.getResource('GET', resourceUrl);
   getOne = async (resourceUrl: string, id: number) => await this.getResource('GET', `${resourceUrl}/${id}`);
+  create = async (resourceUrl: string, obj: any) => await this.getResource('POST', resourceUrl, obj);
+  update = async (resourceUrl: string, obj: any) => await this.getResource('PUT', `${resourceUrl}/${obj.id}`, obj);
+  delete = async (resourceUrl: string, obj: any) => await this.getResource('DELETE', `${resourceUrl}/${obj.id}`);
 }

@@ -1,5 +1,5 @@
 interface IWork {
-  id: number
+  id?: number
   hours: number
   date: Date
   archived: boolean
