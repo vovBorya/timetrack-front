@@ -7,12 +7,12 @@ export class RestProvider {
     url: string,
     data?: any
   ) => {
-    return axios({method, url: `api/${url}`, data});
+    return axios({method, url: `${process.env.REACT_APP_API_PATH}/${url}`, data});
   };
 
   getList = async (resourceUrl: string) => await this.getResource('GET', resourceUrl);
   getOne = async (resourceUrl: string, id: number) => await this.getResource('GET', `${resourceUrl}/${id}`);
-  create = async (resourceUrl: string, obj: any) => await this.getResource('POST', resourceUrl, obj);
-  update = async (resourceUrl: string, obj: any) => await this.getResource('PUT', `${resourceUrl}/${obj.id}`, obj);
-  delete = async (resourceUrl: string, obj: any) => await this.getResource('DELETE', `${resourceUrl}/${obj.id}`);
+  create = async (resourceUrl: string, obj: IWork) => await this.getResource('POST', resourceUrl, obj);
+  update = async (resourceUrl: string, obj: IWork) => await this.getResource('PUT', `${resourceUrl}/${obj.id}`, obj);
+  delete = async (resourceUrl: string, obj: IWork) => await this.getResource('DELETE', `${resourceUrl}/${obj.id}`);
 }

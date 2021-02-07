@@ -2,7 +2,8 @@ import {RestProvider} from "./RestProvider";
 import {AxiosResponse} from "axios";
 
 export class WorkService {
-  worksUrl: string = 'works';
+  // worksUrl: string = 'works';
+  worksUrl: string = '';
   restProvider: RestProvider = new RestProvider();
 
   fetchWorks = (): Promise<AxiosResponse<any>> => this.restProvider.getList(this.worksUrl);

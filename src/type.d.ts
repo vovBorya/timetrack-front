@@ -2,12 +2,14 @@ interface IWork {
   id?: number
   hours: number
   date: Date
-  archived: boolean
+  archived?: boolean
   description: string
 }
 
 type WorkState = {
-  works: IWork[]
+  works: IWork[],
+  loading: boolean,
+  error: string
 };
 
 type WorkAction = {

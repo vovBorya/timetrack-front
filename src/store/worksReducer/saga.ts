@@ -1,4 +1,4 @@
-import {put, takeLatest, call} from 'redux-saga/effects';
+import {put, takeLatest, call, delay} from 'redux-saga/effects';
 import {
   fetchWorksError,
   fetchWorksSuccess,
@@ -12,13 +12,15 @@ const workService: WorkService = new WorkService();
 export function* fetchWorksAsync() {
   try {
     yield put(fetchWorksRequested());
-    const works = yield call(() => workService.fetchWorks());
-    yield put(fetchWorksSuccess(works));
+    yield delay(800)
+    const res = yield call(() => workService.fetchWorks());
+    yield put(fetchWorksSuccess(res.data
+      .map((item: IWork) => ({...item, date: new Date(item.date)}))));
   } catch (err) {
     yield put(fetchWorksError(err));
   }
 }
 
-export function* watchFetchWorks() {
-  yield takeLatest(FETCH_WORKS, fetchWorksAsync)
+export function watchFetchWorks() {
+  return[takeLatest(FETCH_WORKS, fetchWorksAsync)]
 }
